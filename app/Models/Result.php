@@ -11,7 +11,7 @@ class Result extends Model
     use HasFactory;
     protected $table = 'results';
     protected $primaryKey = 'id';
-    protected $fillable = ['marks', 'grade', 'remarks', 'exam_type', 'exam_year'];
+    protected $fillable = ['marks'];
 
     protected $casts = [
         'marks' => 'integer',

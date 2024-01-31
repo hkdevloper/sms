@@ -12,7 +12,7 @@ class Student extends Model
     use HasFactory;
     protected $table = 'students';
     protected $primaryKey = 'id';
-    protected $fillable = ['StudentName', 'StudentCode'];
+    protected $fillable = ['StudentName'];
 
     public function class(): BelongsTo
     {

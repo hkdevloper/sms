@@ -16,10 +16,6 @@ return new class extends Migration
             $table->foreignId('student_id')->constrained('students');
             $table->foreignId('subject_id')->constrained('subjects');
             $table->integer('marks');
-            $table->string('grade');
-            $table->string('remarks');
-            $table->enum('exam_type', ['1st Term', '2nd Term', '3rd Term', '4th Term']);
-            $table->year('exam_year');
             $table->foreignId('class_id')->constrained('classes');
             $table->timestamps();
         });

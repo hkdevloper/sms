@@ -14,8 +14,6 @@ return new class extends Migration
         Schema::create('subjects', function (Blueprint $table) {
             $table->id();
             $table->string('SubjectName');
-            $table->string('SubjectCode');
-            $table->text('SubjectDescription');
             $table->foreignId('class_id')->constrained('classes');
             $table->timestamps();
         });

@@ -11,7 +11,7 @@ class ClassModel extends Model
     use HasFactory;
     protected $table = 'classes';
     protected $primaryKey = 'id';
-    protected $fillable = ['ClassName', 'ClassCode', 'ClassDescription'];
+    protected $fillable = ['ClassName'];
 
     public function subjects(): HasMany
     {
