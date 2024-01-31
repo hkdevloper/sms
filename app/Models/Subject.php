@@ -10,6 +10,8 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Subject extends Model
 {
     use HasFactory;
+    protected $table = 'subjects';
+    protected $primaryKey = 'id';
     protected $fillable = ['SubjectName', 'SubjectCode', 'SubjectDescription'];
 
     public function class(): BelongsTo

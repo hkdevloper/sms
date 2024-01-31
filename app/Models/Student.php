@@ -10,6 +10,8 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Student extends Model
 {
     use HasFactory;
+    protected $table = 'students';
+    protected $primaryKey = 'id';
     protected $fillable = ['StudentName', 'StudentCode'];
 
     public function class(): BelongsTo

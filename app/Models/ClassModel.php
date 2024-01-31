@@ -9,6 +9,8 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class ClassModel extends Model
 {
     use HasFactory;
+    protected $table = 'classes';
+    protected $primaryKey = 'id';
     protected $fillable = ['ClassName', 'ClassCode', 'ClassDescription'];
 
     public function subjects(): HasMany
