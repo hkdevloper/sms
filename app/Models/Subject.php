@@ -12,7 +12,7 @@ class Subject extends Model
     use HasFactory;
     protected $table = 'subjects';
     protected $primaryKey = 'id';
-    protected $fillable = ['SubjectName'];
+    protected $fillable = ['SubjectName', 'class_id'];
 
     public function class(): BelongsTo
     {
